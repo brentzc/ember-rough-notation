@@ -86,8 +86,6 @@ If you don't need a lot of control over an annotation after initial render, the 
 <p>
 ```
 
-#### Properties 
-
 Contributing
 ------------------------------------------------------------------------------
 
