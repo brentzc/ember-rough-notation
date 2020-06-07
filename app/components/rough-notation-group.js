@@ -1,0 +1,1 @@
+export { default } from 'ember-rough-notation/components/rough-notation-group';
