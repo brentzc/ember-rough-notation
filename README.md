@@ -59,11 +59,14 @@ Multiple annotations can be grouped together and the animations triggered in ord
 
 #### Examples
 ```
-    <Rough-Notation-Group @show={{true}} as |group|>
-        <p>
-            Lorem ipsum dolor sit amet, <Rough-Notation @group={{group}} @text="consectetur adipiscing" /> elit. Donec condimentum nibh eleifend, egestas orci a, vulputate lorem. <Rough-Notation @group={{group}} @text="Fusce ornare" /> molestie ipsum sed tincidunt.
-        </p>
-    </Rough-Notation-Group>
+<Rough-Notation-Group @show={{true}} as |group|>
+    <p>
+        Lorem ipsum dolor sit amet,
+        <Rough-Notation @group={{group}} @text="consectetur adipiscing" /> elit.
+        Donec condimentum nibh eleifend, egestas orci a, vulputate lorem.
+        <Rough-Notation @group={{group}} @text="Fusce ornare" /> molestie ipsum sed tincidunt.
+    </p>
+</Rough-Notation-Group>
 ```
 
 #### Properties
@@ -71,6 +74,19 @@ Multiple annotations can be grouped together and the animations triggered in ord
 | ---- | ---- | ------- | ----------- |
 | show | boolean | false | Show/hide the annotation |
 
+### Annotate Modifier
+If you don't need a lot of control over an annotation after initial render, the `{{annote}}` modifier is a good lighweight option.
+
+#### Examples
+```
+<p>
+    <span {{annotate (hash type="box" color="red")}}>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit.
+    Donec condimentum nibh eleifend, egestas orci a, vulputate lorem.
+    <span {{annotate (hash type="underline")}}>Fusce ornare</span> molestie ipsum sed tincidunt.
+<p>
+```
+
+#### Properties 
 
 Contributing
 ------------------------------------------------------------------------------
