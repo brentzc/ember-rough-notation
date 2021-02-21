@@ -1,6 +1,6 @@
 {
   "name": "ember-rough-notation",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Ember components and modifiers for the RoughNotation library.",
   "keywords": [
     "ember-addon",
