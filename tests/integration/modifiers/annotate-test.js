@@ -8,7 +8,7 @@ module('Integration | Modifier | annotate', function(hooks) {
 
   // Replace this with your real tests.
   test('it renders', async function(assert) {
-    await render(hbs`<div {{annotate}}></div>`);
+    await render(hbs`<div {{annotate}}>Foo</div>`);
 
     assert.ok(true);
   });

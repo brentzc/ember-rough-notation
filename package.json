@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Ember components and modifiers for the RoughNotation library.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "rough notation"
   ],
   "repository": "https://github.com/brentzc/ember-rough-notation",
   "license": "MIT",
@@ -27,9 +28,13 @@
   },
   "dependencies": {
     "@ember/render-modifiers": "^1.0.2",
+    "broccoli-funnel": "^3.0.3",
+    "broccoli-merge-trees": "^4.2.0",
+    "ember-auto-import": "^1.10.1",
     "ember-cli-babel": "^7.23.1",
     "ember-cli-htmlbars": "^5.3.2",
-    "rough-notation": "^0.2.2"
+    "ember-modifier": "^2.1.1",
+    "rough-notation": "^0.5.1"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
@@ -38,7 +43,6 @@
     "@glimmer/tracking": "^1.0.3",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-auto-import": "^1.10.1",
     "ember-cli": "~3.25.0",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-inject-live-reload": "^2.0.2",
