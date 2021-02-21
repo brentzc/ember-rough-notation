@@ -3,22 +3,19 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | rough-notation', function(hooks) {
+module('Integration | Component | Rough-Notation', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    await render(hbs`<Rough-Notation @text="Highlight This" />`);
 
-    await render(hbs`<RoughNotation />`);
-
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), 'Highlight This');
 
     // Template block usage:
     await render(hbs`
-      <RoughNotation>
+      <Rough-Notation>
         template block text
-      </RoughNotation>
+      </Rough-Notation>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

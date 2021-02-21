@@ -12,7 +12,7 @@ export default modifier(function annotate(element, [ args ]) {
         strokeWidth = options.strokeWidth,
         padding = options.padding,
         iterations = options.iterations
-    } = args;
+    } = args || {};
 
     const annotation = a(element, {
         type,
